@@ -2,12 +2,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 94px 0 90px;
+  padding: 94px 40px 90px 40px;
 }
 
 .header__menu {
-  justify-self: center;
-  padding: 0 3vw 0 2vw;
+  justify-self: start;
 }
 
 .header__link-list {
@@ -34,7 +33,7 @@
 .header__logo {
   display: block;
   justify-self: center;
-  padding-right: 23px;
+  padding-right: 5%;
 }
 
 .header__logo-image {
@@ -44,17 +43,23 @@
 
 .address {
   justify-self: end;
-  padding-right: 65px;
+  max-width: 261px;
   font-size: 18px;
   font-style: normal;
   line-height: 1.35;
   text-underline-position: under;
 }
 
+.address__link {
+  display: block;
+}
+
+.address__text {
+  max-width: 95%;
+}
+
 .cover {
   position: relative;
-  z-index: -1;
-  min-height: 757px;
   padding: 165px 50px 47px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
@@ -62,9 +67,8 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+  inset: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
   background-color: rgb(0 0 0/ 0.6);
@@ -72,7 +76,7 @@
 
 .cover__title {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: block;
   color: #fff;
   font-weight: 700;
@@ -87,13 +91,11 @@
 }
 
 .aligned-text_center {
-  display: block;
   line-height: 1.37;
   text-align: center;
 }
 
 .aligned-text_right {
-  display: block;
   line-height: 1.05;
   letter-spacing: 30px;
   text-align: end;
@@ -133,10 +135,10 @@
   line-height: 1.27;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .lots {
-  min-height: 759px;
   padding: 180px 50px 0;
 }
 
@@ -151,6 +153,7 @@
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 25px;
   padding-bottom: 30px;
   list-style: none;
