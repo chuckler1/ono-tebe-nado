@@ -1,8 +1,13 @@
+/* Прошу прощения, при активном изучении макета 
+в Figma, случайно сдвинул header в сторону и корректировал изначально
+неправилно, что и порадило мое сильное недоумение и несколько
+вечеров раздумий, надеюсь сейчас все хорошо:) */
+
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 94px 40px 90px 40px;
+  padding: 94px 49px 90px 51px; 
 }
 
 .header__menu {
@@ -33,7 +38,6 @@
 .header__logo {
   display: block;
   justify-self: center;
-  padding-right: 5%;
 }
 
 .header__logo-image {
@@ -43,7 +47,7 @@
 
 .address {
   justify-self: end;
-  max-width: 261px;
+  max-width: 240px;
   font-size: 18px;
   font-style: normal;
   line-height: 1.35;
@@ -52,10 +56,6 @@
 
 .address__link {
   display: block;
-}
-
-.address__text {
-  max-width: 95%;
 }
 
 .cover {
@@ -291,13 +291,13 @@
   text-align: center;
 }
 
-.footer__menu-link_active {
-  text-decoration: none;
-}
-
 .footer__menu-link {
   text-decoration: underline;
   text-underline-position: under;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
 .footer__social-list {
